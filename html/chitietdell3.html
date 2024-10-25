@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/chitietsp.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function goToSlide(index) {
+            $('#carouselExampleIndicators').carousel(index); // Chuyển đến slide tương ứng
+        }
+        const navbarToggle = document.querySelector('.navbar-toggler');
+            const navCollapse = document.querySelector('#navbarSupportedContent');
+
+        (navbarToggle).addEventListener('click', () => {
+            navCollapse.classList.toggle('collapse');
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row row1">
+            <div class="col-lg-2 column">
+                <a href="../html/home.html"><img src="../img/logo.png" class="logo" alt="Logo"></a>
+            </div>
+            <div class="col-lg-5">
+                <form class="form-inline">
+                    <input type="search" id="timkiem" placeholder="Tìm kiếm" aria-label="Search" >
+                    <button class="btn btn-outline-success" type="submit">Tìm</button>
+                </form>
+            </div>
+            <div class="col-lg-2 text-right">
+                <button class="btn" data-toggle="modal" data-target="#loginModal">Đăng Nhập</button>
+                <a href="../html/dangky.html"><button class="btn">Đăng Ký</button></a>
+
+            </div>
+            <div class="col-lg-3 text-center">
+                <a href="#"><i class="fas fa-shopping-cart icon"></i></a>
+                <a href="#"><i class="fas fa-truck icon"></i></a>
+                <a href="#"><i class="fas fa-user icon"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 ">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Thương Hiệu</a>
+                                <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+                                    <li><a class="dropdown-item" href="#">Mac</a></li>
+                                    <li><a class="dropdown-item" href="#">ASUS</a></li>
+                                    <li><a class="dropdown-item" href="../html/thuonghieu_Dell.html">Dell</a></li>
+                                    <li><a class="dropdown-item" href="#">HP</a></li>
+                                    <li><a class="dropdown-item" href="#">LG</a></li>
+                                    <li><a class="dropdown-item" href="#">MSI</a></li>
+                                    <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Phân khúc giá</a>
+                                <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+                                    <li><a class="dropdown-item" href="../html/phankuc_duoi10tr.html">Dưới 10 triệu</a></li>
+                                    <li><a class="dropdown-item" href="#">Từ 10 - 15 triệu</a></li>
+                                    <li><a class="dropdown-item" href="#">Từ 15 - 20 triệu</a></li>
+                                    <li><a class="dropdown-item" href="#">Từ 20 - 25 triệu</a></li>
+                                    <li><a class="dropdown-item" href="#">Từ 25 - 30 triệu</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nhu cầu sử dụng </a>
+                                <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+                                    <li><a class="dropdown-item" href="#">Văn phòng</a></li>
+                                    <li><a class="dropdown-item" href="#">Gaming</a></li>
+                                    <li><a class="dropdown-item" href="#">Dồ họa-Kỹ thuật</a></li>
+                                    <li><a class="dropdown-item" href="#">Sinh Viên</a></li>
+                                    <li><a class="dropdown-item" href="../html/nhucau_camung.html">Cảm ứng</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dòng chip</a>
+                                <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+                                    <li><a class="dropdown-item" href="#">Laptop Core i3</a></li>
+                                    <li><a class="dropdown-item" href="#">Laptop Core i5</a></li>
+                                    <li><a class="dropdown-item" href="#">Laptop Core i7</a></li>
+                                    <li><a class="dropdown-item" href="#">Laptop Core i9</a></li>
+                                    <li><a class="dropdown-item" href="#">Apple M1 Series</a></li>
+                                    <li><a class="dropdown-item" href="#">Apple M2 Series</a></li>
+                                    <li><a class="dropdown-item" href="../html/dongchip_AMD.html">AMD Ryzen</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kích thước màn hình</a>
+                                <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+                                    <li><a class="dropdown-item" href="#">Laptop 12 inch</a></li>
+                                    <li><a class="dropdown-item" href="#">Laptop 13 inch</a></li>
+                                    <li><a class="dropdown-item" href="../html/kichthuoc_14inch.html">Laptop 14 inch</a></li>
+                                    <li><a class="dropdown-item" href="#">Laptop 15.6 inch</a></li>
+                                    <li><a class="dropdown-item" href="#">Laptop 16 inch</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row m-2">
+            <h4 style="color: #305494;">Laptop Dell Inspiron 15 3520</h4>
+        </div>
+        <div class="row d-flex align-items-start">
+            <div class="col-6 p-3">
+                <div class="border-custom">
+                    <div class="custom-carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/btlon/thongtindell3/1.png" class="d-block" alt="Ảnh 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/btlon/thongtindell3/2.png" class="d-block" alt="Ảnh 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/btlon/thongtindell3/3.png" class="d-block" alt="Ảnh 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/btlon/thongtindell3/4.png" class="d-block" alt="Ảnh 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/btlon/thongtindell3/5.png" class="d-block" alt="Ảnh 5">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Trở lại</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Tiếp theo</span>
+                    </a>
+                </div>
+                <!-- Ảnh thu nhỏ -->
+                <div class="d-flex justify-content-center mt-2">
+                    <img src="../img/btlon/thongtindell3/1.png" class="thumbnail mx-1" alt="Ảnh 1" onclick="goToSlide(0)">
+                    <img src="../img/btlon/thongtindell3/2.png" class="thumbnail mx-1" alt="Ảnh 2" onclick="goToSlide(1)">
+                    <img src="../img/btlon/thongtindell3/3.png" class="thumbnail mx-1" alt="Ảnh 3" onclick="goToSlide(2)">
+                    <img src="../img/btlon/thongtindell3/4.png" class="thumbnail mx-1" alt="Ảnh 4" onclick="goToSlide(3)">
+                    <img src="../img/btlon/thongtindell3/5.png" class="thumbnail mx-1" alt="Ảnh 5" onclick="goToSlide(4)">
+                </div>
+            </div>
+            <div class="col-6 p-3 align-items-center">
+                <h5 style="font-weight: bold;">Chọn cấu hình</h5>
+                <div class="border-ch">
+                    <p style="font-size: 20px; font-weight: bold;">
+                        I5 - 1235U <br>
+                        16GB - 512GB <br>
+                        <span style="color: rgb(157, 156, 156); font-size: 20px;"> 16.490.000đ </span>
+                    </p>
+                </div>
+
+                <h5 style="font-weight: bold; margin-top: 30px;">Chọn màu</h5>
+                <div class="border-ch">
+                    <p style="font-size: 20px; font-weight: bold; float: left; ">
+                        <img src="../img/btlon/thongtindell1/4.png" alt="" id="mau">
+                        Bạc
+                    </p>
+                    <p style="color: rgb(157, 156, 156); font-size: 20px; font-weight: bold;">16.490.000đ</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row d-flex align-items-start">
+            <div class="col-6 p-3">
+                <div class="border-tt">
+                    <p style="font-size: 18px;">
+                        <span style="font-size: 20px; color: #fff; font-weight: bold;"> Thông tin sản phẩm</span><br>
+                        <li>Nguyên hộp, đầy đủ phụ kiện từ nhà sản suất</li>
+                        <li>Bảo hành pin 12 tháng</li>
+                        <li>Bộ nguồn, máy, sách hdsd</li>
+                        <li>Bảo hành 12 tháng tại trung tâm bảo hành Chính hãng. 1 đổi 1 trong 30</li>
+                        <li>ngày nếu có lỗi phần cứng từ nhà sản xuất.</li>
+                        <li>Giá sản phẩm đã bao gồm VAT</li>
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 p-3">
+
+                <p style="height: 45px; background-color: #5683d1; font-size: 20px; font-weight: bold; color: #fff; border-radius: 5px; padding: 8px;">khuyến mãi</p>
+                <p style="padding-left: 15px;padding-top: 15px; border-bottom: 1px solid#305494; border-left: 1px solid#305494; border-right: 1px solid#305494; margin-top: -18px;">
+                    1.Tặng tai nghe Bluetooth JBL T115BT màu trắng trị giá 240,000₫ (Hết quà
+                    hoàn tiền 180,000₫)<br>
+                    2.Tặng Balo trị giá 500k cho thành viên D Student khi mua Laptop (số lượng có
+                    hạn)<br>
+                    3.Đặc quyền D Student mua Microsoft Office 365 Personal giá "sốc" khi mua
+                    kèm laptop, chi tiết tại cửa hàng (số lượng có hạn)<br>
+                    4.Đổi điểm thi nhận Voucher giảm thêm đến 3 triệu mua Laptop, iPad<br><br>
+                </p>
+                <div class="row d-flex align-items-start ml-3">
+                    <div class="col-6">
+                        <form action="" method="post">
+                            <input type="button" value="Mua Ngay" class="nut">
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form action="" method="post">
+                            <input type="button" value="Thêm vào giỏ hàng" class="nut">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex align-items-start">
+            <div class="col-6 p-3">
+                <div class="border-dd">
+                    <center>
+                        <span style="color: #fff; font-weight: bold; font-size: 25px;">Đặc Điểm Nổi Bật</span>
+                    </center>
+                    <li>Thiết kế sang trọng và tinh tế với màu bạc cao cấp.</li>
+                    <li>Trang bị con chip Intel Core i5 1235U mang lại hiệu suất ổn định.</li>
+                    <li>Ram 16GB và ổ cứng SSD 512GB PCIe đảm bảo tốc độ khởi động nhanh chóng.</li>
+                    <li>Màn hình 15.6 inch Full HD với tần số quét 120Hz, mang đến trải nghiệm gaming mượt mà.</li>
+                    <li>Hệ điều hành Windows 11 kết hợp bộ Office tiêu chuẩn, đáp ứng tốt nhu cầu văn phòng.</li>
+                </div>
+                <p style="border-bottom: 1px solid #305494;border-left: 1px solid #305494;border-right: 1px solid #305494; width: 90%; margin: auto; padding: 15px; margin-top: -10px;">
+                    <b>Laptop Dell Inspiron 15 3520</b> có kích thước 35 85 x 23 49 x 1 75 cm với trọng lượng 1 7 kg
+                    cùng màu bạc trang nhã Laptop được trang bị RAM 16 GB và SSD 512 GB nâng cấp lưu trữ
+                    CPU Intel Core i 5 1235 U tích hợp card đồ họa Intel Iris Xe cho nguồn sức mạnh vượt trội xử
+                    lý đa tác vụ nhanh chóng, chơi game đồ họa trung bình cao Màn hình 15 6 inch FHD và tần
+                    số 120 Hz mang đến những khung hình ấn tượng, sống động <br>
+                    <b>Laptop Dell Inspiron 15 3520 laptop mỏng nhẹ cân mọi tác vụ</b> <br>
+                    Laptop Dell Inspiron 15 3520 là mẫu laptop có thể cân được nhiều tác vụ từ văn phòng cho
+                    đến giải trí Không chỉ có nguồn sức mạnh vượt trội, mẫu laptop Dell Inspiron này còn được
+                    trang bị màn hình 15 6 inch 120 Hz cho bạn tận hưởng hiển thị sống động, lý tưởng cho mọi
+                    công việc hay giải trí <br>
+                    <b>RAM 16 GB DDR 4 cùng ổ cứng SSD M 2 có tốc độ đọc ghi tối ưu</b> <br>
+                    Laptop Dell Inspiron 15 3520 được trang bị RAM 16 GB DDR 4 Cùng với đó, laptop còn sở
+                    hữu ổ cứng SSD M 2 có dung lượng 512 GB mở ra không gian lưu trữ tuyệt vời cho mọi dữ
+                    liệu và ứng dụng của bạn <br>
+                    <b>Kiểu dáng siêu mỏng với màu bạc tinh tế, phần bản lề nâng cao khi mở hỗ trợ tản nhiệt.</b><br>
+                    Thiết kế của laptop Dell Inspiron 15 3520 vừa thanh lịch, vừa hiện đại với tổng thể mỏng nhẹ
+                    thích hợp cho những ai thường sử dụng laptop ngoài trời, thuận tiện khi di chuyển <br>
+                    
+                </p>
+            </div>
+            <div class="col-6 p-3">
+                <h2>Thông số kỹ thuật</h2>
+                <hr>
+                <table class="table table-borderless table-striped table-primary">
+                    <tbody>
+                        <tr>
+                            <td>Loại card đồ họa</td>
+                            <td>Intel Iris Xe Graphics</td>
+                        </tr>
+                        <tr>
+                            <td>Dung lượng RAM</td>
+                            <td>16GB</td>
+                        </tr>
+                        <tr>
+                            <td>Loại RAM</td>
+                            <td>DDR4 2666MHz</td>
+                        </tr>
+                        <tr>
+                            <td>Số khe ram</td>
+                            <td>2 x 8GB</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước màn hình</td>
+                            <td>15.6 inches</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ màn hình/td>
+                            <td>Màn hình chống chói</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành
+                                Windows 11</td>
+                            <td>Windows 11 Home Single Language 64
+                                bit +
+                                Office Home & Student 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Độ phân giải màn hình</td>
+                            <td>1920 x 1080 pixels (FullHD)</td>
+                        </tr>
+                        <tr>
+                            <td>Loại CPU</td>
+                            <td>1Intel Core i5
+                                1235U (10 cores) Max Turbo
+                                Frequency: 4.40 GHz</td>
+                        </tr>
+                        <tr>
+                            <td>Webcam</td>
+                            <td>802.11 ac</td>
+                        </tr>
+                        <tr>
+                            <td>Bluetooth</td>
+                            <td>Bluetooth 5.0</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ âm thanh</td>
+                            <td>Cirrus Logic HD Audio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2 class="text">SẢN PHẨM TƯƠNG TỰ</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-2">
+                <a href="#" class="a1">
+                    <div class="card">
+                        <img src="../img/btlon/thuong hieu/dell14.png" class="card-img-top img-thumbnail" alt="Thumbnail 1">
+                        <div class="card-body">
+                            <h6>Laptop Dell
+                                Latidude
+                                7320 9PPWV</h6>
+                            <h5><span style="color: red;">16.990.000</span> - <span style="text-decoration: line-through; color: darkgray;">19.990.000</span></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="a1">
+                    <div class="card">
+                        <img src="../img/btlon/thuong hieu/dell10.png" class="card-img-top img-thumbnail" alt="Thumbnail 1">
+                        <div class="card-body">
+                            <h6>Laptop Dell Vostro 3520</h6>
+                                <h5><span style="color: red;">18.490.000</span> - <span style="text-decoration: line-through; color: darkgray;">18.990.000</span></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="a1">
+                    <div class="card">
+                        <img src="../img/btlon/thuong hieu/dell11.png" class="card-img-top img-thumbnail" alt="Thumbnail 1">
+                        <div class="card-body">
+                            <h6>Laptop Dell Inspiron 15 3520</h6>
+                                <h5 ><span style="color: red;">16.490.000</span> - <span style="text-decoration: line-through; color: darkgray;">16.990.000</span></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="a1">
+                    <div class="card">
+                        <img src="../img/btlon/thuong hieu/dell12.png" class="card-img-top img-thumbnail" alt="Thumbnail 1">
+                        <div class="card-body">
+                            <h6>Laptop Dell Inspiron 15
+                                3520 YTC9K</h6>
+                                <h5><span style="color: red;">12.590.000</span> - <span style="text-decoration: line-through; color: darkgray;">13.990.000</span></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="a1">
+                    <div class="card">
+                        <img src="../img/btlon/thuong hieu/dell13.png" class="card-img-top img-thumbnail" alt="Thumbnail 1">
+                        <div class="card-body">
+                            <h6>Laptop Dell Inspiron 15
+                                3525 4R52X</h6>
+                                <h5><span style="color: red;">12.290.000</span> - <span style="text-decoration: line-through; color: darkgray;">13.990.000</span></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5 text-white bg-dark">
+            <div class="col-lg-12 "></div>
+                Nguyễn Minh Anh - Lê Thi Thanh Thảo - Email:exolthao2004@gmail.com - Số điện thoại:0344461922
+            </div>
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="loginEmail">Emai/Số điện thoại</label>
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Nhập email/số điện thoại" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Mật Khẩu</label>
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Nhập mật khẩu" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+[class*=col-]{
+    margin: 0px;
+    padding: 0px;
+}
+
+.row1 {
+    height: 100px;
+    background-color: #282424;
+    display: flex; 
+    align-items: center;
+}
+.column {
+    height: 100%;
+}
+.logo {
+    height: 100%;
+}
+.form-inline {
+    display: flex;  
+}
+.form-control {
+    width: 100% !important; 
+}
+.btn {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+.btn:hover {
+    color: #305494;
+}
+.icon {
+    font-size: 25px;
+    color: white; 
+    margin-right: 60px;
+}
+.icon:hover {
+    color: #305494;
+}
+.nav-link{
+    font-size: 18px; 
+    text-transform: uppercase; 
+    transition: color 0.3s;
+    margin-right: 40px;
+}
+.nav-link:hover {
+    color: #305494 !important; 
+}
+#timkiem{
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.thumbnail {
+    width: 50px; /* Kích thước ảnh thu nhỏ */
+    height: 50px;
+    cursor: pointer; /* Con trỏ chuột kiểu nhấn */
+    border: 1px solid #305494;
+}
+.carousel-inner img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của carousel */
+    height: 100%; /* Để giữ đúng tỷ lệ */
+}
+.custom-carousel {
+    position: relative;
+    overflow: hidden; /* Ẩn các thành phần tràn ra ngoài */
+    width: 50%; 
+    margin: auto; /* Căn giữa trên màn hình */
+}
+
+.carousel-inner {
+    width: 100%; /* Đảm bảo carousel chiếm toàn bộ chiều rộng */
+    height: 320px; /* Thiết lập chiều cao cụ thể để đồng nhất */
+}
+
+.carousel-inner img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của carousel */
+    height: 100%; /* Đảm bảo ảnh đáp ứng chiều cao */
+    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+}
+.border-custom {
+    border: 2px solid #305494; /* Viền màu xanh dương */
+    background-color: white; /* Nền màu trắng */
+    padding: 15px; /* Khoảng cách giữa viền và nội dung */
+    width: 90%; /* Chiếm 90% chiều rộng của cột */
+    margin: 0 auto; /* Canh giữa khung trong cột */
+    position: relative;
+    border-radius: 15px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute; /* Vị trí tuyệt đối để định vị bên ngoài khung */
+    top: 50%; /* Đặt chúng ở giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    border: none; /* Không viền */
+    border-radius: 50%; /* Làm tròn các nút */
+    padding: 10px; /* Khoảng cách cho nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    font-size: 10px;
+}
+
+.carousel-control-prev {
+    left: -40px; /* Cạnh trái khung */
+}
+
+.carousel-control-next {
+    right: -40px; /* Cạnh phải khung */
+}
+.border-ch{
+    border: 2px solid #305494; /* Viền màu xanh dương */
+    background-color: white; /* Nền màu trắng */
+    padding: 3px; /* Khoảng cách giữa viền và nội dung */
+    width: 25%; /* Chiếm 90% chiều rộng của cột */
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+#mau{
+    width: 40%;
+    height: 100%;
+}
+.border-tt {
+    border: 2px solid #305494; /* Viền màu xanh dương */
+    background-image: linear-gradient(#305494, #fff);
+    padding: 15px; /* Khoảng cách giữa viền và nội dung */
+    width: 90%; /* Chiếm 90% chiều rộng của cột */
+    margin: 0 auto; /* Canh giữa khung trong cột */
+    position: relative;
+    border-radius: 15px;
+}
+
+.nut{
+    width: 90%;
+    background-color: #305494;
+    height: 40px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.nut:hover{
+    background-color: #9eb0e6;
+}
+.border-dd{
+    background-color: #7ca3e5; 
+    width: 90%; 
+    margin: 0 auto; 
+    border-radius: 15px; 
+    padding: 10px;
+}
+.table{
+    border-radius: 15px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 3px solid #305494;
+    margin: 10px;
+}
+.card-body {
+    flex-grow: 1; 
+    padding: 2px;
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.text{
+    margin: 20px;
+    color: #305494;
+    font-weight: bold;
+}
+.card-body h6{
+    margin-top: 10px;
+    min-height: 50px; /* Hoặc điều chỉnh giá trị này theo nhu cầu */
+}
+.card-img-top {
+    height: 250px; /* Chiều cao cố định cho các ảnh */
+}
+.text{
+    margin: 20px;
+    color: #305494;
+    font-weight: bold;
+}
+.a1{
+    color: #282424;
+}
+.a1:hover{
+    text-decoration: none;
+}

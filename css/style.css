@@ -1,0 +1,54 @@
+
+.row1 {
+    height: 100px;
+    background-color: #282424;
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.column {
+    height: 100%;
+}
+.logo {
+    height: 100%;
+}
+.form-inline {
+    display: flex; /* Sử dụng Flexbox */
+    width: 80%; /* Đảm bảo form chiếm toàn bộ chiều rộng */
+}
+.form-control {
+    width: 80% !important; /* Đặt chiều dài mong muốn */
+}
+.btn {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+.btn:hover {
+    color: #305494;
+}
+.icon {
+    font-size: 25px;
+    color: white; /* Đảm bảo màu sắc đủ tương phản */
+    margin-right: 60px;
+}
+.icon:hover {
+    color: #305494;
+}
+.nav-link{
+    font-size: 18px; /* Chỉnh kích thước chữ */
+    text-transform: uppercase; /* Chữ in hoa */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    margin-right: 40px;
+}
+.nav-link:hover {
+    color: #305494 !important; /* Màu chữ khi hover */
+}
+.quangcao{
+    margin-top: 10px;
+    height: 100%;
+    border: 2px solid #305494 ;
+}
+.quangcao:hover {
+    transform: scale(1.3); /* Phóng to hình ảnh lên 10% khi di chuột */
+}
